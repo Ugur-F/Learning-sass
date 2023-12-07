@@ -1,0 +1,116 @@
+body{
+    background-color: beige;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    background-color: aqua;
+    width: 29%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: auto;
+    position: relative;
+
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+
+    box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.17);
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 19%;
+    transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.box:hover .overlay {
+    height: 60%;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // -webkit-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-135%, -40%);
+    text-align: start;
+    // border: 1px solid black;
+    margin-left: -48%;
+    margin-top: -12%;
+    transition: .5s ease;
+    line-height: 3px;
+}
+
+.text2 {
+    color: grey;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // -webkit-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-135%, -40%);
+    text-align: start;
+    // border: 1px solid black;
+    margin-left: -48%;
+    margin-top: -19%;
+    transition: .5s ease;
+    line-height: 20px;
+    display: none;
+    width: 95%;
+}
+
+.box:hover .text{
+    transform: translate(-0%, -160%);
+}
+
+.box:hover .text2{
+    transform: translate(-0%, -0%);
+    display: flex;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+/* === BOTTOM === */
+.boxbottom{
+    background-color: white;
+    width: 29%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    position: relative;
+    color: grey;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.17);
+}
+
+.textbottom{
+    margin-left: 2%;
+}
